@@ -6,10 +6,22 @@
 //Conditional statements (if, if else, else) for declaring the winner.
 
 // getComputerChoice array = [0]Rock, [1]Paper [2] Scissors
-const playerSelection = ["Rock" , "Paper", "Scissors"];
-const getComputerChoice = ["Rock" , "Paper", "Scissors"];
-const computerSelection = getComputerChoice[Math.floor(Math.random() * getComputerChoice.length)] ;
+const playerSelection = prompt ("Rock, Paper, Scissors?", "").toLowerCase();
+const getComputerChoice = ["rock" , "paper", "scissors"];
+let computerSelection = getComputerChoice[Math.floor(Math.random() * getComputerChoice.length)] ;
 
-if (playerSelection === computerSelection){
-    result.textContent ="It is a draw."
-}   
+console.log (playerSelection)
+function playGround(playerSelection , computerSelection){
+    if (playerSelection === "rock" && computerSelection === "rock" 
+    || playerSelection === "paper" && computerSelection === "paper" 
+    || playerSelection === "scissors" && computerSelection === "scissors")
+    return "Draw."
+else if 
+    (playerSelection === "rock" && computerSelection === "scissors"
+    || playerSelection === "paper" && computerSelection === "rock"
+    || playerSelection === "scissors" && computerSelection === "paper")
+    return "You win."
+
+    else
+    return "You lost."
+}
