@@ -9,19 +9,25 @@
 const playerSelection = prompt ("Rock, Paper, Scissors?", "").toLowerCase();
 const getComputerChoice = ["rock" , "paper", "scissors"];
 let computerSelection = getComputerChoice[Math.floor(Math.random() * getComputerChoice.length)] ;
-
-console.log (playerSelection)
+let player = `You win. ${playerSelection} beats ${computerSelection}.`
+let computer = `You lose. ${computerSelection} beats ${playerSelection}.`
+console.log (playerSelection);
 function playGround(playerSelection , computerSelection){
     if (playerSelection === "rock" && computerSelection === "rock" 
     || playerSelection === "paper" && computerSelection === "paper" 
     || playerSelection === "scissors" && computerSelection === "scissors")
-    return "Draw."
+    return "Tie. Let's try again!"
 else if 
     (playerSelection === "rock" && computerSelection === "scissors"
     || playerSelection === "paper" && computerSelection === "rock"
     || playerSelection === "scissors" && computerSelection === "paper")
-    return "You win."
+    return player
 
-    else
-    return "You lost."
+else
+    return computer
 }
+function game(playRound);
+    for (let i = 0; i < 5; i++)
+    if (return = player)
+
+console.log(playGround(playerSelection , computerSelection));
