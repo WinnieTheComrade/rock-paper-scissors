@@ -63,7 +63,7 @@ function playRound(playerSelection , computerSelection){
 
 function game(){
     let scorePlayer = 0 ;
-    let computerScore = 0 ;
+    let scoreComputer = 0 ;
     console.log("Welcome!")
     console.log("Let's play a game.")
     console.log ("---------------")
@@ -76,15 +76,15 @@ function game(){
         if (checkWinner(playerSelection , computerSelection) == "player"){
             scorePlayer++;
 
-        } else if (checkWinner(playerSelection, computerSelection) == "computer"){
+        } else (checkWinner(playerSelection, computerSelection) == "computer"){
             computerScore++;
       }
     }
     
-    if(scorePlayer > computerScore){
+    if(scorePlayer > scoreComputer){
         console.log ("The Player is the winner.");
     } 
-    else if (scorePlayer < computerScore){
+    else if (scorePlayer < scoreComputer){
         console.log ("The Computer is the winner.");
     } 
     else {

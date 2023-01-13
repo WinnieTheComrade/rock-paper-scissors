@@ -84,3 +84,5 @@ function game(){
     else {
         console.log ("It is a tie!");
     }
+
+    This function command was used to start the game as soon as the webpage loads up.
