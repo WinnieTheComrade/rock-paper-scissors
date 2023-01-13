@@ -76,8 +76,8 @@ function game(){
         if (checkWinner(playerSelection , computerSelection) == "player"){
             scorePlayer++;
 
-        } else (checkWinner(playerSelection, computerSelection) == "computer"){
-            computerScore++;
+        } else (checkWinner(playerSelection, computerSelection) == "computer");{
+            scoreComputer++;
       }
     }
     
